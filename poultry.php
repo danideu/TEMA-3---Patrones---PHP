@@ -41,7 +41,7 @@ class TurkeyAdapter extends Animals{
         $this->turkeyAdapter = new Turkey();
     }
     public function quack() {
-        $this->turkeyAdapter->gobble();
+        return $this->turkeyAdapter->gobble();
     }
 
     public function fly() {
