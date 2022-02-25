@@ -32,16 +32,16 @@ class Turkey {
     }
 }
 
-class TurkeyAdapter extends Animals{
+class TurkeyAdapter{
 
-    private $turkeyAdapter;
+    private $tukey;
     private $contador = 0;
 
     public function __construct(){
-        $this->turkeyAdapter = new Turkey();
+        $this->tukey = new Turkey();
     }
     public function quack() {
-        return $this->turkeyAdapter->gobble();
+        return $this->tukey->gobble();
     }
 
     public function fly() {
